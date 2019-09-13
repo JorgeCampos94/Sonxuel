@@ -1,4 +1,6 @@
- const mongoose = require('mongoose');
+/* ESTA ES LA CLASE CONEXIÓN DONDE TENGO  */
+
+const mongoose = require('mongoose');
 const URL_MONGO = 'mongodb+srv://JorgeCampos:J12345678@cluster0-ftyud.mongodb.net/Sonxuel?retryWrites=true&w=majority'
 
     mongoose.connect(URL_MONGO,{useNewUrlParser:true},(err)=>{

@@ -62,5 +62,17 @@ app.get('/all/Productos',(req,res)=>{
         })
 });
 
+app.get('/Producto/:id',(req,res)=>{
+    const {id} = req.params;
+    Producto.findById(id).exec()
+        .then( prod => {
+            res.send(prod)  
+            
+            } )
+        .catch( err => {
+            res.send(err) 
+            console.log(err)
+        })
+});
 
 
